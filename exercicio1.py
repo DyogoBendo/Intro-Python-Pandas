@@ -1,4 +1,5 @@
 nome = input ('Qual seu nome? ')
+resultados = '\nResultado Final:\n'
 while nome:
 
     salto1 = float (input ('Qual foi o valor do seu primeiro salto? '))
@@ -9,9 +10,11 @@ while nome:
 
     media = (salto1 + salto2 + salto3 + salto4 + salto5) / 5
 
-    print('Resultado Final: ') 
-    print('Atleta:', nome)
-    print('Saltos:', salto1, '-', salto2, '-', salto3, '-', salto4, '-', salto5)
-    print(f'Média dos Saltos: {media:.2f}m')
+    resultados += '-'*20+'\n'
+    resultados += f'Atleta: {nome} \n'
+    resultados += f'Saltos:  {salto1} - {salto2} - {salto3} - {salto4} - {salto5} \n'
+    resultados += f'Média dos Saltos: {media:.2f}m \n'
 
-    nome = input ('Qual seu nome? ') 
+    nome = input ('Qual seu nome? ')    
+    
+print (resultados) 
