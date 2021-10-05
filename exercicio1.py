@@ -1,5 +1,7 @@
 nome = input ('Qual seu nome? ')
 resultados = '\nResultado Final:\n'
+maior_media = 0
+
 while nome:
 
     salto1 = float (input ('Qual foi o valor do seu primeiro salto? '))
@@ -15,6 +17,11 @@ while nome:
     resultados += f'Saltos:  {salto1} - {salto2} - {salto3} - {salto4} - {salto5} \n'
     resultados += f'Média dos Saltos: {media:.2f}m \n'
 
-    nome = input ('Qual seu nome? ')    
-    
+    if media > maior_media:
+        maior_media = media
+        vencedor = nome
+
+    nome = input ('Qual seu nome? ')
+   
 print (resultados) 
+print (f'O vencedor foi: {vencedor}')
