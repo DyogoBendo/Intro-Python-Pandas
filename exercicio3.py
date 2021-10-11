@@ -1,4 +1,4 @@
-nome = input('Digite o nome: ')
+nome = input('Digite um nome: ')
 x = ''
 
 for letter in nome.strip():
