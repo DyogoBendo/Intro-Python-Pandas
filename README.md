@@ -1,3 +1,2 @@
 # O que é esse repositório?
-Esse repositório possuí os exercícios da atividade de introdução ao Python e ao Pandas, na matéria de Tópicos I. 
-Alunos: Andressa Schmidt e Dyogo Bendo.
+Esse repositório possuí os exercícios da atividade de introdução ao Python e ao Pandas, na matéria de Tópicos Especiais I, lecionada pelo  <a href="https://github.com/jeffersonchaves"> professor Jefferson Chaves </a>, desenvolvida pelos alunos: <a href="https://github.com/andressaschmidt"> Andressa Schmidt </a> e <a href="https://github.com/DyogoBendo"> Dyogo Bendo </a>. O enunciado das questões se encontram no pdf localizado neste repositório, entitulado <a href="https://github.com/DyogoBendo/Intro-Python-Pandas/blob/master/ATIVIDADE%202%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python.pdf"> "ATIVIDADE 2 - Introdução ao Python" </a>
