@@ -1,6 +1,5 @@
-from posix import listdir
 import pandas as pd
-import sys, os, webbrowser
+import sys, webbrowser
 from math import inf
 
 def byte_to_mega_byte(num):
