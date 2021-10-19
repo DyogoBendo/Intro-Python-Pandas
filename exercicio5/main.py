@@ -1,13 +1,16 @@
 import pandas as pd
 
-df = pd.read_fwf('usuarios.txt', header=None, names=['usuario', 'espaço utilizado'])
-
 def byte_to_mega_byte(num):
     return round((num / (1024 * 1024)), 2)
+
+def calcula_porcentagem_uso(espaco_utilizado, espaco_total):
+    return round(((espaco_utilizado * 100) / espaco_total), 2)
+
+df = pd.read_fwf('usuarios.txt', header=None, names=['usuario', 'espaço utilizado'])
+
 espaco_total =df['espaço utilizado'].sum()
 
-df['% de uso'] = round((df['espaço utilizado']* 100 /espaco_total),2)
-
+df['% de uso'] = calcula_porcentagem_uso(espaco_utilizado=df["espaço utilizado"], espaco_total=espaco_total)
 df['espaço utilizado'] = byte_to_mega_byte(df['espaço utilizado'])
 
 relatorio = 'ACME Inc.            Uso do espaço em disco pelos usuário\n'
