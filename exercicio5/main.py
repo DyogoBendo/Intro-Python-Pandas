@@ -23,7 +23,5 @@ relatorio += '\n'
 relatorio += f'Espaco total ocupado: {byte_to_mega_byte(espaco_total)} MB\n'
 relatorio += f'Espaco medio ocupado: {byte_to_mega_byte(espaco_total/6)} MB\n'
 
-print(relatorio)
-
 with open('relatorio.txt', 'w') as arquivo:
     arquivo.write(relatorio)
